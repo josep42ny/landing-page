@@ -7,6 +7,7 @@ html {
 *,
 *::before,
 *::after {
+    border: 0;
     box-sizing: inherit;
     padding: 0;
     margin: 0;
@@ -20,25 +21,25 @@ body {
 
 header {
     justify-content: space-between;
-    padding: 16px 32px;
 }
 
 main {
     flex: 1;
-}
-
-footer {
-    color: white;
-    justify-content: center;
+    align-self: center;
 }
 
 header,
 footer {
-    display: flex;
-    align-items: center;
     flex: 0 0 auto;
-    background-color: #1f2937;
     height: 80px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0;
+    width: 100vw;
 }
 
 a {
@@ -55,9 +56,45 @@ nav ul {
     gap: 24px;
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.container {
+    width: 960px;
+}
+
+.signup-button {
+    background-color: #3b82f6;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 8px 32px;
+    margin: 8px 0;
+}
+
 .logo {
     flex: 1 0 auto;
     font-size: 1.5rem;
     font-weight: 700;
     color: white;
+}
+
+.dark {
+    color: white;
+    background-color: #1f2937;
+}
+
+.cards {
+    display: flex;
+    gap: 32px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
 }
