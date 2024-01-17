@@ -12,6 +12,35 @@ html {
     margin: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    color: white;
+    justify-content: center;
+}
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    background-color: #1f2937;
+    height: 80px;
+}
+
 a {
     color: #eee;
     text-decoration: none;
@@ -23,15 +52,7 @@ ul {
 
 nav ul {
     display: flex;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 32px;
-    height: 80px;
-    background-color: #1f2937;
+    gap: 24px;
 }
 
 .logo {
