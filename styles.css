@@ -46,23 +46,42 @@ section {
     padding: 150px 0;
 }
 
+p {
+    line-height: 1.25em;
+    padding: 0.75em 0;
+}
+
 h1 {
-    padding-bottom: 1.4rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-bottom: 0.8rem;
 }
 
 h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
     padding-bottom: 1.1rem;
 }
 
+.h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 button {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
     background-color: #3882f6;
     border-radius: 10px;
-    padding: 12px 42px;
+    padding: 10px 42px;
 }
 
 .white-button {
-    color: #1F2937;
-    background-color: #E5E7EB;
+    color: #E5E7EB;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #E5E7EB;
 }
 
 .wrapper {
@@ -149,6 +168,7 @@ button {
 .call {
     display: flex;
     justify-content: space-between;
+    align-items: center ;
     border-radius: 10px;
     padding: 64px 128px;
     color: white;
